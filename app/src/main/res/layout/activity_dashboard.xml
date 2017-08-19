@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.kodluyoruz.lilywashingmachine.DashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/white" />
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/gaugeWhiteHumidity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            app:gaugeEndValue="100"
+            app:gaugePointEndColor="@color/md_blue_700"
+            app:gaugePointSize="6"
+            app:gaugePointStartColor="@color/md_blue_700"
+            app:gaugeStartAngle="135"
+            app:gaugeStartValue="0"
+            app:gaugeStrokeCap="ROUND"
+            app:gaugeStrokeColor="@color/md_grey_400"
+            app:gaugeStrokeWidth="8dp"
+            app:gaugeSweepAngle="270" />
+
+        <TextView
+            android:id="@+id/txtWhiteHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-60dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Nem\n100%" />
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/gaugeWhiteFullness"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            app:gaugeEndValue="100"
+            app:gaugePointEndColor="@color/md_light_green_A700"
+            app:gaugePointStartColor="@color/md_light_green_A700"
+            app:gaugeStartAngle="135"
+            app:gaugeStartValue="0"
+            app:gaugeStrokeCap="ROUND"
+            app:gaugeStrokeColor="@color/md_grey_400"
+            app:gaugeStrokeWidth="10dp"
+            app:gaugeSweepAngle="270" />
+
+        <TextView
+            android:id="@+id/txtWhiteFullness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-50dp"
+            android:gravity="center"
+            android:text="100%" />
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/gaugeWhiteTemp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:gaugeDividerColor="@color/md_yellow_500"
+            app:gaugeDividerDrawFirst="false"
+            app:gaugeDividerDrawLast="true"
+            app:gaugeDividerSize="1"
+            app:gaugeDividerStep="10"
+            app:gaugeEndValue="100"
+            app:gaugePointEndColor="@color/md_green_500"
+            app:gaugePointStartColor="@color/md_red_500"
+            app:gaugeStartAngle="180"
+            app:gaugeStartValue="0"
+            app:gaugeStrokeCap="BUTT"
+            app:gaugeStrokeColor="@color/md_grey_400"
+            app:gaugeStrokeWidth="20dp"
+            app:gaugeSweepAngle="180" />
+
+        <TextView
+            android:id="@+id/txtWhiteTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-63dp"
+            android:gravity="center"
+            android:text="25°C" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabWhiteRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_play_arrow"
+            app:fab_colorNormal="#DA4336"
+            app:fab_colorPressed="#E75043"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label=""
+            app:fab_progress="0"
+            app:fab_progress_backgroundColor="#4D000000"
+            app:fab_progress_color="#FF009688"
+            app:fab_progress_indeterminate="false"
+            app:fab_progress_max="100"
+            app:fab_progress_showBackground="false"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_showShadow="true"
+            app:fab_size="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/color" />
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/gaugeColorHumidity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            app:gaugeEndValue="100"
+            app:gaugePointEndColor="@color/md_blue_700"
+            app:gaugePointSize="6"
+            app:gaugePointStartColor="@color/md_blue_700"
+            app:gaugeStartAngle="135"
+            app:gaugeStartValue="0"
+            app:gaugeStrokeCap="ROUND"
+            app:gaugeStrokeColor="@color/md_grey_400"
+            app:gaugeStrokeWidth="8dp"
+            app:gaugeSweepAngle="270" />
+
+        <TextView
+            android:id="@+id/txtColorHumidity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-60dp"
+            android:gravity="center"
+            android:text="Nem\n100%" />
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/gaugeColorFullness"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            app:gaugeEndValue="100"
+            app:gaugePointEndColor="@color/md_light_green_A700"
+            app:gaugePointStartColor="@color/md_light_green_A700"
+            app:gaugeStartAngle="135"
+            app:gaugeStartValue="0"
+            app:gaugeStrokeCap="ROUND"
+            app:gaugeStrokeColor="@color/md_grey_400"
+            app:gaugeStrokeWidth="10dp"
+            app:gaugeSweepAngle="270" />
+
+        <TextView
+            android:id="@+id/txtColorFullness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-50dp"
+            android:gravity="center"
+            android:text="100%" />
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/gaugeColorTemp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            app:gaugeDividerColor="@color/md_yellow_500"
+            app:gaugeDividerDrawFirst="false"
+            app:gaugeDividerDrawLast="true"
+            app:gaugeDividerSize="1"
+            app:gaugeDividerStep="10"
+            app:gaugeEndValue="100"
+            app:gaugePointEndColor="@color/md_green_500"
+            app:gaugePointStartColor="@color/md_red_500"
+            app:gaugeStartAngle="180"
+            app:gaugeStartValue="0"
+            app:gaugeStrokeCap="BUTT"
+            app:gaugeStrokeColor="@color/md_grey_400"
+            app:gaugeStrokeWidth="20dp"
+            app:gaugeSweepAngle="180" />
+
+        <TextView
+            android:id="@+id/txtColorTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-63dp"
+            android:gravity="center"
+            android:text="25°C" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fabColorRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_play_arrow"
+            app:fab_colorNormal="#DA4336"
+            app:fab_colorPressed="#E75043"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_label=""
+            app:fab_progress="0"
+            app:fab_progress_backgroundColor="#4D000000"
+            app:fab_progress_color="#FF009688"
+            app:fab_progress_indeterminate="false"
+            app:fab_progress_max="100"
+            app:fab_progress_showBackground="false"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_showShadow="true"
+            app:fab_size="normal" />
+    </LinearLayout>
+
+</LinearLayout>
