@@ -1,0 +1,3 @@
+# LilyWashingMachine
+
+TO USE THIS, IT NEEDS GOOGLEJSON FILE.
